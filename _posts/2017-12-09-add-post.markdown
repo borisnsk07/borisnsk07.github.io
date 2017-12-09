@@ -1,7 +1,0 @@
----
-title: Add post
-date: 2017-12-09 15:53:00 Z
----
-
--Idi na hui
--Kusai za hui
