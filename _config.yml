@@ -1,5 +1,5 @@
 ---
-title: Borisnsk07.Github.Io
+title: Fakenews Microsite
 timezone: UTC
 collections:
   posts:
@@ -8,42 +8,3 @@ collections:
   uploads:
     title: Uploads
     output: true
-name: OHUENNIY BLOG
-description: HUI ZNAET ZACHEM
-avatar: http://buroshokolada.com.ua/components/com_jshopping/files/img_products/DSC_02221.jpg
-footer-links:
-  dribbble: 
-  email: 
-  facebook: 
-  flickr: 
-  github: barryclark/jekyll-now
-  instagram: 
-  linkedin: 
-  pinterest: 
-  rss: 
-  twitter: jekyllrb
-  stackoverflow: 
-  youtube: 
-  googleplus: 
-disqus: 
-google_analytics: 
-url: 
-baseurl: ''
-permalink: "/:title/"
-version: v1.2.0
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    css_class: highlight
-sass:
-  style: :expanded
-gems:
-- jekyll-sitemap
-- jekyll-feed
-exclude:
-- Gemfile
-- Gemfile.lock
-- LICENSE
-- README.md
-- CNAME
