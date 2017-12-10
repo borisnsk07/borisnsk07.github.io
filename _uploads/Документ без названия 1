@@ -1,0 +1,50 @@
+void draw_graph
+{
+	double t=0;
+	for ()
+	{
+		
+	}
+
+}
+
+void Display()
+{
+    lcd.clear(); //clears buffer at start of loop
+    time_t seconds = time(NULL); // get current time
+    strftime(timedatebuffer, 15, "%R %D", localtime(&seconds)); //store current time and date in a string
+    
+    
+//Get Temperature reading 
+    
+t1 = getTemperature(); // This gets the temperature from the sensor and stores in an array t1
+t2 = (t1*1.8)+ 32;//This calculates the temperature in Fahrenheit and stores in array t1
+int length = sprintf(temp,"T = %.2f C",t1);// Show temperature in Centigrade
+int length2 = sprintf(temp2, "T = %.2f F",t2);//Show temperature in Fahrenheit
+lcd.printString("TEMP READING", 0, 0); //Print to LCD screen
+    
+    
+     
+    
+    if(length<=14 && length2<=14)
+    {
+            lcd.printString(temp,0,2); //Print the value of first temperature reading
+            lcd.printString (temp2,0,3); //Print the value of second temperature reading
+    }        
+            lcd.printString(timedatebuffer,0,4); //Print the time and date to screen
+            
+    //Plot array on graph and print to LCD        
+            
+    if(Switch)
+    {
+            lcd.printString("LOG ACTIVE", 0, 5); //Print to screen log active when writing to file
+    }
+    else
+    {
+            lcd.printString("LOG INACTIVE", 0, 5); 
+    }
+            lcd.refresh();
+            wait(0.5);
+
+}
+
